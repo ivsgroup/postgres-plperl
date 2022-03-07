@@ -1,0 +1,6 @@
+FROM postgres:12.10
+
+RUN apt-get update && apt-get install -y \
+    postgresql-plperl-$PG_MAJOR
+
+
